@@ -32,6 +32,6 @@ body {
     --bs-nav-link-hover-color: #000;
 }
 .navbar ul a {
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 1.1rem;
 }

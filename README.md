@@ -66,7 +66,8 @@
 ### Languages Used
 
 ### Frameworks, Libraries & Programs Used
-
+- Google Fonts
+- Bootstrap 
 
 ## **Deployment & Local Development**
 

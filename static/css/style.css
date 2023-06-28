@@ -1,3 +1,37 @@
 /* Google Fonts*/
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+/*General styles*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #3a3a3a;
+}
+
+
+/*Navigation bar */
+.container-fluid {
+    background-color: hsl(76, 32%, 67%, 0.7);
+}
+.navbar {
+    padding: 0rem;
+}
+
+.navbar-brand {
+    padding: 1rem 1rem;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2rem;
+}
+
+.navbar-nav {
+    padding-right: 4rem;
+    justify-content: space-between;
+    gap: 3rem;
+    --bs-nav-link-hover-color: #000;
+}
+.navbar ul a {
+    font-weight: bold;
+    font-size: 1.1rem;
+}

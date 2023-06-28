@@ -4,14 +4,20 @@
 
 /*General styles*/
 
+.content {
+    min-height: calc(100vh - 90px);
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: #3a3a3a;
+    
 }
 
 
 /*Navigation bar */
+
 .container-fluid {
     background-color: hsl(76, 32%, 67%, 0.7);
 }
@@ -34,4 +40,39 @@ body {
 .navbar ul a {
     font-weight: bolder;
     font-size: 1.1rem;
+}
+
+
+/* Footer */
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: hsl(76, 32%, 67%, 0.7);
+    min-width: 100vw;
+    height:fit-content;
+} 
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks>li {
+    display: inline;
+    
+}
+
+.social-networks i {
+    font-size: 1.5rem;
+    align-items: center;
+    margin: 0.8rem auto;
+    padding: 0 20px;
+    color: #0E6461;
+}
+
+footer p {
+    text-align: center;
 }

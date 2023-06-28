@@ -68,6 +68,7 @@
 ### Frameworks, Libraries & Programs Used
 - Google Fonts
 - Bootstrap 
+- https://favicon.io/favicon-generator/
 
 ## **Deployment & Local Development**
 

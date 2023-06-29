@@ -16,7 +16,7 @@ body {
 
 /*Navigation bar */
 
-.container-fluid {
+#navbar {
     background-color: hsl(76, 32%, 67%, 0.7);
 }
 .navbar {
@@ -79,15 +79,6 @@ footer p {
     font-size: x-small;
 }
 
-/*index.html*/
-.row1 {
-    background-color: red;
-}
-
-.row2 {
-    background-color: blue;
-}
-
-.row1 {
-    background-color: green;
+#about {
+    border: 2px solid purple;
 }

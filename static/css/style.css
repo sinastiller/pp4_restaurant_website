@@ -41,6 +41,33 @@ body {
 }
 
 
+/* About section */
+
+#about {
+    background-color: #FFCFC2;
+}
+
+.intro-about-section {
+    line-height: 2rem;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.about-section {
+    line-height: 2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.cafe-inside {
+    height: auto;
+    text-align: center;
+}
+
+
+
 /* Footer */
 
 .fixed-bottom {
@@ -79,6 +106,3 @@ footer p {
     font-size: x-small;
 }
 
-#about {
-    border: 2px solid purple;
-}

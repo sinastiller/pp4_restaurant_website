@@ -33,7 +33,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['restaurant-website-ee029a10692a.herokuapp.com',
-                 '8000-sinastiller-pp4restaura-4dmd1gro0s9.ws-eu100.gitpod.io']
+                 '8000-sinastiller-pp4restaura-4dmd1gro0s9.ws-eu100.gitpod.io',
+                 '8000-sinastiller-pp4restaura-4dmd1gro0s9.ws-eu101.gitpod.io']
 
 
 # Application definition

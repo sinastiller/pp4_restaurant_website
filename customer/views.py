@@ -1,5 +1,5 @@
-from django.shortcuts import render, request
-from django.view import view
+from django.shortcuts import render
+from django.views import View
 
 
 """ Customer will be able to view the landing page"""
@@ -7,4 +7,4 @@ from django.view import view
 
 class IndexPage(View):
     def get(self, request, *args, **kwargs):
-        return render(request, templates/index.html)
+        return render(request, '../templates/index.html')

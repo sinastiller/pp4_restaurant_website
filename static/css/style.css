@@ -52,7 +52,6 @@ body {
     line-height: 2rem;
     font-family: 'Playfair Display', sans-serif;
     font-weight: 600;
-    font-size: 1.3rem;
 }
 
 .about-section {
@@ -68,6 +67,20 @@ body {
 }
 
 
+/* Essential information section */
+#info h3 {
+    font-family: 'Playfair Display', sans-serif;
+
+}
+
+#info h4 {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.info-added {
+    line-height: 1rem;
+}
 
 /* Footer */
 
@@ -78,7 +91,7 @@ body {
     left: 0;
     z-index: 1030;
     background-color: hsl(76, 32%, 67%, 0.7);
-     min-width: 100vw; 
+    min-width: 100vw; 
     height:fit-content;
 } 
 

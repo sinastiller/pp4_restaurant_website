@@ -68,18 +68,19 @@ body {
 
 
 /* Essential information section */
-#info h3 {
+#info h4 {
     font-family: 'Playfair Display', sans-serif;
 
 }
 
-#info h4 {
+#info h5 {
     font-weight: 500;
     text-decoration: underline;
 }
 
-.info-added {
-    line-height: 1rem;
+#info p {
+    line-height: 0.2rem;
+    font-size: small;
 }
 
 /* Footer */

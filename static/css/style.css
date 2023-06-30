@@ -5,8 +5,9 @@
 /*General styles*/
 * {
     margin: 0;
-    padding:0; 
+    padding:0;
 }
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -19,6 +20,7 @@ body {
 #navbar {
     background-color: hsl(76, 32%, 67%, 0.7);
 }
+
 .navbar {
     padding: 0rem;
 }
@@ -68,6 +70,19 @@ body {
 
 
 /* Essential information section */
+
+#info {
+    background-color: #FAFAFA;
+}
+
+div.col-lg-7.col-md-12.align-self-center {
+    text-align: center;
+}
+
+#get-in-touch {
+    background-color: #E3F2FD;
+}
+
 #info h4 {
     font-family: 'Playfair Display', sans-serif;
 

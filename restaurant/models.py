@@ -13,3 +13,14 @@ class Menu(models.Model):
     def __str__(self):
         return self.name
         return str(self.price) + ": €"
+
+
+class Category(models.Model):
+    """
+    Add category to menu item
+    """
+    name = models.CharField(max_length=50, blank=True)
+    slug - models.SlugField(blank=True, unique=True)
+
+    def __str__(self):
+        return self.name

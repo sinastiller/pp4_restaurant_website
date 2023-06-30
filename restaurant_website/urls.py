@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from customer.views import IndexPage
+from restaurant.views import ViewMenu
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', IndexPage.as_view(), name="index"),
+    path('', IndexPage.as_view(), name='index'),
+    path('menu/', ViewMenu.as_view(), name='menu'),
 ]

@@ -69,6 +69,12 @@
 - Google Fonts
 - Bootstrap 
 - https://favicon.io/favicon-generator/
+- cloudinary
+- figma
+- django documentation
+- stackverflow
+- font awesome
+- coolors
 
 ## **Deployment & Local Development**
 
@@ -89,6 +95,10 @@ Please find the carried out testing on [TESTING.md](TESTING.md).
 ## **Credits**
 
 ### Code Used
+- https://www.youtube.com/playlist?list=PLPSM8rIid1a0qiCpbfujex5lZoXr2SRFC
+- Hello Django
+- I think therefore i blog
+
 
 ### Content
 

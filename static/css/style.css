@@ -136,3 +136,18 @@ footer p {
     font-size: x-small;
 }
 
+/* Menu */
+.menu {
+    background-color: #FFCFC2;
+}
+
+.menu-card {
+    color: #FAFAFA;
+    background-color: #0E6461;
+}
+
+.card-title {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}

@@ -41,6 +41,7 @@ ALLOWED_HOSTS = ['restaurant-website-ee029a10692a.herokuapp.com',
 
 INSTALLED_APPS = [
     'restaurant',
+    'menu',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -3,3 +3,5 @@ function todayDate(){
     var n = d.getFullYear() + "  ";
     return document.getElementById("date").innerHTML = n;
   }
+
+todayDate()

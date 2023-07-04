@@ -1,5 +1,10 @@
 from django.contrib import admin
-from .models import Menu, Category
+from .models import Menu
+# , Category
 
-admin.site.register(Menu)
-admin.site.register(Category)
+
+@admin.register(Menu)
+class MenuAdmin(admin.ModelAdmin):
+    search_fields = ['name', 'category']
+    prepopulated_fields = {'slug': ('name',)}
+# admin.site.register(Category)

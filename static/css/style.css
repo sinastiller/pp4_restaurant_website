@@ -138,19 +138,21 @@ footer p {
 
 /* Menu */
 .menu {
-    background-color: #FFCFC2;
+    background-color: rgb(255, 207, 194, 0.7);
 }
 
 .menu-card {
     color: #FAFAFA;
-    background-color: #0E6461;
+    background-color: rgb(14, 100, 97, 0.8);
 }
 
 .card-title {
     font-weight: 900;
     text-transform: uppercase;
+    text-decoration: underline;
 }
 
 .menu-item p {
+    font-size: small;
     font-style: italic;
 }

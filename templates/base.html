@@ -11,7 +11,7 @@
     <meta name="description" content="Happy Leeks. Vegan Cafe serving breakfast and lunch.">
     <meta name="keywords" content="food, cafe, vegan, breakfast, lunch, coffee, good vibes">
     <meta name="author" content="Sina Stiller">
-    <title>{% block title %} Happy Leeks | Vegan Cafe 🌱 {% endblock%}</title>
+    <title>{% block title %} Happy Leeks | Vegan Cafe 🌱 {% endblock %}</title>
 
     <!-- Facivon -->
     <link rel="apple-touch-icon" sizes="180x180"
@@ -61,8 +61,13 @@
                                 My Account
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Sign Up</a></li>
-                                <li><a class="dropdown-item" href="#">Login</a></li>
+                                {% if user.is_authenticated %}
+                                <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
+                                {% else %}
+                                <li><a class="dropdown-item" href="{% url 'account_signup' %}">Sign Up</a></li>
+                                <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
+                                {% endif %}
+                                
                             </ul>
                         </li>
                     </ul>

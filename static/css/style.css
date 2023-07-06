@@ -12,6 +12,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: #3a3a3a;
+    min-height: 100vh;
+    display: flex;
 }
 
 
@@ -98,9 +100,62 @@ div.col-lg-7.col-md-12.align-self-center {
     font-size: small;
 }
 
+/* Menu */
+.menu {
+    background-color: rgb(255, 207, 194, 0.7);
+}
+
+.menu-card {
+    color: #FAFAFA;
+    background-color: rgb(14, 100, 97, 0.8);
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.4)
+}
+
+.card-title {
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.menu-item p {
+    font-size: small;
+    font-style: italic;
+}
+
+/* Login */
+
+.login-form {
+    background-color: #FFCFC2;
+}
+
+.btn-secondary {
+    background-color: #0E6461;
+    color :#FAFAFA
+}
+
+.btn-secondary:hover {
+    color: #0E6461;
+    background-color: #FAFAFA;
+}
+
+.login-form a {
+    color: #0E6461;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-form a:hover {
+    color: #FAFAFA;
+}
+
+.img-login {
+    margin: 0.5rem;
+}
+
 /* Footer */
 
 .footer {
+    margin-top: auto;
     background-color: hsl(76, 32%, 67%, 0.3);
 } 
 
@@ -127,26 +182,4 @@ footer p {
     padding: 0;
     text-align: center;
     font-size: x-small;
-}
-
-/* Menu */
-.menu {
-    background-color: rgb(255, 207, 194, 0.7);
-}
-
-.menu-card {
-    color: #FAFAFA;
-    background-color: rgb(14, 100, 97, 0.8);
-    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.4)
-}
-
-.card-title {
-    font-weight: 900;
-    text-transform: uppercase;
-    text-decoration: underline;
-}
-
-.menu-item p {
-    font-size: small;
-    font-style: italic;
 }

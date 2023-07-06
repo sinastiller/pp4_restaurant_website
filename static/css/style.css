@@ -101,14 +101,7 @@ div.col-lg-7.col-md-12.align-self-center {
 /* Footer */
 
 .footer {
-    /* position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030; */
     background-color: hsl(76, 32%, 67%, 0.3);
-    /* min-width: 100vw; 
-    height:fit-content; */
 } 
 
 .social-networks {

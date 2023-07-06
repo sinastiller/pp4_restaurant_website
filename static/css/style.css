@@ -137,6 +137,7 @@ footer p {
 .menu-card {
     color: #FAFAFA;
     background-color: rgb(14, 100, 97, 0.8);
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.4)
 }
 
 .card-title {

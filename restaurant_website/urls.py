@@ -24,3 +24,5 @@ urlpatterns = [
     path('table_booking/', include('booking.urls', namespace='table_booking')),
     path('accounts/', include('allauth.urls')),
 ]
+
+admin.site.site_header = 'Happy Leeks AdminPanel'

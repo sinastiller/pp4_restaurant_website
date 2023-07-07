@@ -95,7 +95,7 @@ div.col-lg-7.col-md-12.align-self-center {
     text-decoration: underline;
 }
 
-#info p {
+#info p, .guest p {
     line-height: 0.2rem;
     font-size: small;
 }
@@ -105,7 +105,7 @@ div.col-lg-7.col-md-12.align-self-center {
     background-color: rgb(255, 207, 194, 0.7);
 }
 
-.menu h1 {
+.menu h1, .guest h1 {
     font-family: 'Playfair Display', sans-serif;
     text-transform: uppercase;
     font-weight: 900;
@@ -157,6 +157,47 @@ div.col-lg-7.col-md-12.align-self-center {
 
 .img-login {
     margin: 0.5rem;
+}
+
+/* Table Booking */
+
+.booking {
+    background-color: #FFCFC2;
+}
+
+.guest input , 
+.name-phone input {
+    background-color: #FFCFC2;
+    border: 1px solid #FAFAFA;
+    border-radius: 4px;
+    font-size: 15px;
+    text-align: center;
+    width:100%;
+}
+
+.guest input:hover {
+    background-color: rgb(255, 226, 218);
+    border-color: #3a3a3a;
+}
+
+.name-phone ::placeholder{
+    text-align: start;
+    font-size: small;
+    font-weight: 100;
+}
+.date input,
+.time input {
+    background-color: #FFCFC2;
+    border: 1px solid #FAFAFA;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    width:75%;
+}
+
+.booking .btn {
+    width: 50%;
 }
 
 /* Footer */

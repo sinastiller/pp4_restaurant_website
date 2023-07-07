@@ -105,6 +105,13 @@ div.col-lg-7.col-md-12.align-self-center {
     background-color: rgb(255, 207, 194, 0.7);
 }
 
+.menu h1 {
+    font-family: 'Playfair Display', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.4rem;
+}
+
 .menu-card {
     color: #FAFAFA;
     background-color: rgb(14, 100, 97, 0.8);

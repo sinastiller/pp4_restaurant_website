@@ -6,3 +6,4 @@ from .models import Booking
 class BookingAdmin(admin.ModelAdmin):
     list_filter = ('time',)
     search_fields = ['name', 'date']
+    list_display = ['name', 'date', 'time']

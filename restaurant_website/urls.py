@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', IndexPage.as_view(), name='index'),
     path('menu_list/', include('menu.urls', namespace='menu_list')),
+    path('table_booking/', include('booking.urls', namespace='table_booking')),
     path('accounts/', include('allauth.urls')),
 ]

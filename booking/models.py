@@ -1,6 +1,6 @@
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
-from phonenumber_field.modelfields import PhoneNumberField
+
 
 TIME_CHOICES = (
     ('08:00 AM', '08:00 AM'),
@@ -21,7 +21,7 @@ class Booking(models.Model):
     """
 
     name = models.CharField(max_length=30)
-    phone = PhoneNumberField(max_length=10)
+    phone = models.CharField(max_length=10)
     number_of_guests = models.IntegerField(default=1,
                                            validators=[MaxValueValidator(4),
                                                        MinValueValidator(1)])

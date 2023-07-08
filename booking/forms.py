@@ -1,10 +1,5 @@
 from django import forms
-from django.forms import ModelForm
 from .models import Booking
-
-
-class DateInput(forms.DateInput):
-    input_type = 'date'
 
 
 class BookingForm(forms.ModelForm):
@@ -12,9 +7,21 @@ class BookingForm(forms.ModelForm):
     Table booking form
     """
 
+    date = forms.DateField(
+        input_formats=['%d/%m/%Y'],
+        widget=forms.DateTimeInput(attrs={
+            'placeholder': 'dd/mm/yyyy',
+        }))
+
+    phone = forms.CharField(
+        max_length=10,
+        widget=forms.TextInput(
+            attrs={
+                'placeholder': '0123456789',
+                }
+            )
+        )
+
     class Meta:
         model = Booking
         fields = '__all__'
-        widgets = {
-            'date': DateInput(),
-        }

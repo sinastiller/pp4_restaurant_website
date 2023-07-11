@@ -16,13 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from restaurant.views import IndexPage
+from booking.views import ManageBooking
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', IndexPage.as_view(), name='index'),
     path('menu_list/', include('menu.urls', namespace='menu_list')),
     path('table_booking/', include('booking.urls', namespace='table_booking')),
+    path('manage_booking/', ManageBooking.as_view(), name='manage_booking'),
     path('accounts/', include('allauth.urls')),
+    
 ]
 
 admin.site.site_header = 'Happy Leeks AdminPanel'

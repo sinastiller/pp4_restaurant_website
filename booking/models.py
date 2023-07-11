@@ -21,7 +21,7 @@ class Booking(models.Model):
     """
 
     name = models.CharField(max_length=30)
-    phone = models.CharField(max_length=10)
+    phone = models.IntegerField()
     number_of_guests = models.IntegerField(default=1,
                                            validators=[MaxValueValidator(4),
                                                        MinValueValidator(1)])

@@ -1,6 +1,4 @@
-from django.shortcuts import render
-from django.contrib import messages
-from .models import Booking
+from django.shortcuts import render, redirect
 from .forms import BookingForm
 
 
@@ -11,6 +9,10 @@ def table_booking(request):
         booking_form = BookingForm(request.POST)
         if booking_form.is_valid():
             booking_form.save()
+            return redirect('index')
+            # return HttpResponseRedirect("/thanks/")
+    else:
+        booking_form = BookingForm()
 
     context = {
         'form': booking_form

@@ -37,3 +37,11 @@ class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
         fields = '__all__'
+
+
+class ManageBooking(forms.ModelForm):
+
+
+    class Meta:
+        model = Booking
+        fields = ['number_of_guests', 'date', 'time']

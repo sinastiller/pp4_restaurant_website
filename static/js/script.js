@@ -5,3 +5,8 @@ function todayDate(){
   }
 
 todayDate()
+
+const alert = bootstrap.Alert.getOrCreateInstance('#myAlert');
+setTimeout(() => {
+  alert.close()
+}, 2000);

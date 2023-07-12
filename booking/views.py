@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views import generic, View
-from .forms import BookingForm
+from .forms import BookingForm, ManageBooking
 from .models import Booking
 
 
@@ -28,3 +28,14 @@ def table_booking(request):
         'form': booking_form
     }
     return render(request, '../templates/booking.html', context)
+
+
+def view_booking(request):
+
+    booking = ManageBooking.objects.get()
+    
+    context = {
+            'form': form
+        }
+
+    return render(request, '../templates/manage_booking.html', context)

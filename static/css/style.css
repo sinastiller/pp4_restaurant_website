@@ -71,6 +71,13 @@ body {
 }
 
 
+/* Gallery section */
+
+#gallery img {
+    width: 325px;
+    height: 200px;
+}
+
 /* Essential information section */
 
 #info {

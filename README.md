@@ -75,6 +75,10 @@
 - stackverflow
 - font awesome
 - coolors
+- https://tinyjpg.com/
+- https://cloudconvert.com/jpg-to-webp
+- unsplash
+- pexels
 
 ## **Deployment & Local Development**
 

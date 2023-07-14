@@ -20,7 +20,7 @@ body {
 /*Navigation bar */
 
 #navbar {
-    background-color: hsl(76, 32%, 67%, 0.3);
+    background-color: rgba(183, 198, 144, 0.3);
 }
 
 .navbar {
@@ -111,6 +111,7 @@ div.col-lg-7.col-md-12.align-self-center {
 /* Menu */
 .menu {
     background-color: rgb(255, 207, 194, 0.7);
+    margin-bottom: 48px;
 }
 
 .menu h1, .guest h1 {
@@ -241,4 +242,55 @@ footer p {
     padding: 0;
     text-align: center;
     font-size: x-small;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1400px) {
+    #gallery img {
+        width: 250px;
+        height: 150px;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #gallery img {
+        width: 400px;
+        height: 250px;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #gallery img {
+        width: 250px;
+        height: 150px;
+        margin: 5px 0;
+    }
+
+    .guest h1 {
+        font-size: 2rem;
+    }
+
+    .guest p {
+        line-height: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   
+    .navbar-nav {
+       padding: 0px;
+       gap: 0.2rem;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+
+        .booking .card{
+            margin-right: 5px;
+            margin-left: 5px;
+        }
 }

@@ -73,6 +73,11 @@ body {
 
 /* Gallery section */
 
+#gallery h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
 #gallery img {
     width: 325px;
     height: 200px;
@@ -82,7 +87,7 @@ body {
 /* Essential information section */
 
 #info {
-    background-color: #FAFAFA;
+    background-color: #E0E0E0;
 }
 
 div.col-lg-7.col-md-12.align-self-center {
@@ -293,4 +298,10 @@ footer p {
             margin-right: 5px;
             margin-left: 5px;
         }
+
+        iframe {
+            width: 300px;
+            height: 200px;
+        }
 }
+

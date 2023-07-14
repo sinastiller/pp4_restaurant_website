@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views import generic, View
-from .forms import BookingForm, ManageBooking
+from .forms import BookingForm
 from .models import Booking
 
 
@@ -30,12 +30,22 @@ def table_booking(request):
     return render(request, '../templates/booking.html', context)
 
 
-def view_booking(request):
+class ViewBooking(View):
+    def get(self, request, *args, **kwargs):
+        bookings = Booking.objects.get()
 
-    booking = ManageBooking.objects.get()
-    
-    context = {
-            'form': form
+        context = {
+            'bookings': bookings
         }
 
-    return render(request, '../templates/manage_booking.html', context)
+        return render(request, '../templates/manage_booking.html', context)
+
+# def view_booking(request):
+
+#     bookings = Booking.objects.all()
+
+#     context = {
+#             'bookings': bookings
+#         }
+
+#     return render(request, '../templates/manage_booking.html', context)

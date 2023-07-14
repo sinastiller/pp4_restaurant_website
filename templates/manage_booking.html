@@ -1,14 +1,11 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<!-- Alert message -->
-<div class="container col-4 justify-content-center mx-auto mt-3 mb-3">
-    <div class="alert alert-success alert-dismissible fade show" role="alert" id="myAlert">
-        <strong>Success!</strong> We can't wait to welcome you here at Happy Leeks soon.
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
+<div>
+  <p>{{ bookings.name }}</p>
+  <p>{{ bookings.number_of_guests }}</p>
+  <p>{{ bookings.date }}</p>
+  <p>{{ bookings.time }}</p>
+
 </div>
-
-<div class="row">
-
 {% endblock content %}

@@ -22,7 +22,10 @@
                                 {% if item.category == category %}
                                 <div class="menu-item align-self-center">
                                     <h5 class="mb-1">{{ item.name }}</h5>
-                                    <p class="mb-3">{{ item.description }} <strong>{{ item.price }}€</strong></p>
+                                    <p class="mb-3">{{ item.description }}
+                                        <br>
+                                        <strong>{{ item.price }}€</strong>
+                                    </p>
                                 </div>
                                 {% endif %}
                             {% endfor %}

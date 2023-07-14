@@ -76,6 +76,7 @@ body {
 #gallery img {
     width: 325px;
     height: 200px;
+    margin: 5px 0;
 }
 
 /* Essential information section */
@@ -129,6 +130,9 @@ div.col-lg-7.col-md-12.align-self-center {
     font-weight: 900;
     text-transform: uppercase;
     text-decoration: underline;
+}
+.menu-item h5 {
+    letter-spacing: 0.1rem;
 }
 
 .menu-item p {

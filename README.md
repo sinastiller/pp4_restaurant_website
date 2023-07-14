@@ -106,6 +106,7 @@ Please find the carried out testing on [TESTING.md](TESTING.md).
 
 
 ### Content
+- Menu from https://www.kyndcommunity.com/pages/kyndcafe, https://cafeorganic.co/
 
 ### Media
 

@@ -77,10 +77,34 @@
 - coolors
 - https://tinyjpg.com/
 - https://cloudconvert.com/jpg-to-webp
-- unsplash
-- pexels
+
 
 ## **Deployment & Local Development**
+## Deplyment
+This project was created by using Gitpod. I used the pre-built template from [Code Institute](https://github.com/Code-Institute-Org/python-essentials-template).
+The following commands were used:
+* **git add .** - to add all the changes.
+* **git commit -m "..."** - to commit all the changes to the local repository.
+* **git push** - to push the committed changes to the GitHub repository.
+
+### **Deployment to HerokuApp**
+1. Create a list of requirements, commit and push to GitHub.
+2. Create Account with Heroku.
+3. On the Heroku Dashboard, select "create new app".
+4. Give the app a name (it must be unique, as each app name can only exist once) and choose your current region.
+5. Click "Create App".
+6. On the "Settings" Tab, scroll to Config Vars.
+7. Create a Config Var.
+8. In the "KEY" field enter CREDS and for the "VALUE" field copy the creds.json link from your file and click "Add".
+9. In the "KEY" field enter PORT and for the "VALUE" field enter 8000 and click "Add".
+10. Add Buildpacks.
+11. Choose the first one to be python and press "save".
+12. Choose the second one to be nodejs and press "save".
+13. Move to "Deploy" Tab.
+14. Select "GitHub" as Deploment Methond and connect to your GitHub and the repository you want to upload.
+15. Choose between automatic/manual deploy option.
+16. After app was successfully deployed, click the "View" button to connect to webpage.
+
 
 ### Deployment
 
@@ -109,5 +133,6 @@ Please find the carried out testing on [TESTING.md](TESTING.md).
 - Menu from https://www.kyndcommunity.com/pages/kyndcafe, https://cafeorganic.co/
 
 ### Media
-
+- unsplash
+- pexels
 ### Acknowledgements

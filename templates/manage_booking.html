@@ -1,11 +1,26 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div>
-  <p>{{ bookings.name }}</p>
-  <p>{{ bookings.number_of_guests }}</p>
-  <p>{{ bookings.date }}</p>
-  <p>{{ bookings.time }}</p>
-
+<div class="row row-cols-1 row-cols-md-2 m-3 g-4">
+  {% for booking in bookings %}
+  <div class="col-md-4 offset-md-4 col-sm-6 offset-sm-3">
+    <div class="card manage border border-0 d-flex justify-content-center h-100 mx-2">
+      <div class="card-body h-100 mx-2">
+        <h4 class="text-center">
+          Name of booking: {{ booking.name }}
+        </h4>
+        <div class="card-text">
+          <div class="align-self-center">
+            <p class="mb-1"><strong>Date & Time:</strong> {{ booking.date }} {{ booking.time }}</p>
+            <p class="mb-3"><strong>Number of Guests:</strong> {{ booking.number_of_guests }}</p>
+          </div>
+          <a href="{% url 'booking:edit_booking' booking.id %}" class="btn btn-success">Edit</a>
+          <a href="{% url 'booking:delete_booking' booking.id %}" class="btn btn-danger">Delete</a>        
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
 </div>
+
 {% endblock content %}

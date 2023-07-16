@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.views import generic, View
 from .forms import BookingForm
 from .models import Booking
@@ -39,3 +39,24 @@ class BookingsList(generic.View):
             }
 
             return render(request, 'manage_booking.html', context)
+
+
+def edit_booking(request, booking_id):
+
+    booking = get_object_or_404(Booking, id=booking_id)
+    if request.method == 'POST':
+        booking_form = BookingForm(request.POST, instance=booking)
+        if booking_form.is_valid():
+            booking_form.save()
+            return redirect('booking:manage_booking')
+
+    booking_form = BookingForm(instance=booking)
+
+    return render(request, 'edit_booking.html', {'form': booking_form})
+
+
+def delete_booking(request, booking_id):
+
+    booking = get_object_or_404(Booking, id=booking_id)
+    booking.delete()
+    return redirect('booking:manage_booking')

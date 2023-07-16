@@ -6,4 +6,6 @@ app_name = 'booking'
 
 urlpatterns = [
     path('', views.table_booking, name='table_booking'),
+    path('manage_booking/', 
+         views.BookingsList.as_view(), name='manage_booking')
 ]

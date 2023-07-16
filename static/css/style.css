@@ -217,6 +217,28 @@ div.col-lg-7.col-md-12.align-self-center {
     width: 50%;
 }
 
+/* Manage Booking */
+
+.manage {
+    background-color: #FFCFC2;
+}
+
+.manage h4 {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.manage .btn {
+    width: 25%;
+}
+
+.manage .btn-success {
+    background-color: #0E6461;
+}
+
+.manage .btn-success:hover {
+    background-color: rgb(14, 100, 97, 0.7);
+}
 /* Footer */
 
 .footer {

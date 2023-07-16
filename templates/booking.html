@@ -15,7 +15,6 @@
                 <div class="row justify-content-around mx-5">
                     <div class="col-lg-5 col-md-12 text-center m-1">
                         {{ form.number_of_guests.errors }}
-                            <!-- <input type="submit" value="1"> -->
                         {{ form.number_of_guests }}
                     </div>
                 </div>
@@ -24,19 +23,17 @@
             
         </div>
         <div class="row name-phone justify-content-center">
-            <div class="col-md-6 mt-4 mb-4">
+            <div class="col-md-6 mb-4">
                 <div class="row justify-content-around mx-5">
                     <div class="col-lg-5 col-md-12 text-center m-1">
                             {{ form.name.errors }}
                             <label for="{{ form.name.name }}">Name:</label>
-                            <!-- <input type="text" id="name" name="name" placeholder="Your Name"> -->
                             {{ form.name }}
                         
                     </div>
                     <div class="col-lg-5 col-md-12 text-center m-1">
                             {{ form.phone.errors }}
                             <label for="{{ form.phone.phone }}">Phone Number:</label>
-                            <!-- <input type="text" id="phone" name="phone" placeholder="0123456789"> -->
                             {{ form.phone }}
                     </div>
                 </div>
@@ -48,7 +45,6 @@
                 <div class="row justify-content-around mx-5">
                     <div class="col-lg-5 col-md-12 text-center m-1">
                             {{ form.date.errors }}
-                            <!-- <input type="date" id="date" name="date"> -->
                             {{ form.date }}
                         
                     </div>
@@ -61,7 +57,6 @@
                 <div class="row justify-content-around mx-5">
                     <div class="col-lg-5 col-md-12 text-center m-1">
                             {{ form.time.errors }}
-                            <!-- <input type="time" id="time" name="time"> -->
                             {{ form.time }}
                     </div>
                 </div>

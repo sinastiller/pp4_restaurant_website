@@ -71,7 +71,7 @@
                             {% endif %}
                             <ul class="dropdown-menu mb-2">
                                 {% if user.is_authenticated %}
-                                <li class="align-self-end"><a class="dropdown-item" href="{% url 'manage_booking' %}">Manage Booking</a></li>
+                                <li class="align-self-end"><a class="dropdown-item" href="{% url 'booking:manage_booking' %}">Manage Booking</a></li>
                                 <li class="align-self-end"><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
                                 {% else %}
                                 <li class="align-self-end"><a class="dropdown-item" href="{% url 'account_signup' %}">Sign Up</a></li>
@@ -84,6 +84,18 @@
                 </div>
             </div>
         </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    {% for message in messages %}
+                    <div class="alert {{ message.tags }} alert-dismissable fade show" id="msg" role="alert">
+                        {{ message | safe }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
     </header>
     
     <main>

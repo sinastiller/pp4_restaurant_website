@@ -64,7 +64,25 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-12 text-center m-1">
-                <button class="btn btn-secondary btn-sm justify-content-center" type="submit">Update Reservation</button>
+                <button class="btn btn-secondary btn-sm justify-content-center" type="button" value="UPDATE" data-bs-toggle="modal"
+                data-bs-target="#editMessage">Update Reservation</button>
+            </div>
+        </div>
+        <div class="modal fade" id="editMessage" tabindex="-1" aria-labelledby="editMessageLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editMessageLabel">Reservation Update Request</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to update your reservation?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="mt-2 mb-3 btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+                        <button type="submit" class="mt-2 mb-3 btn btn-secondary">UPDATE</button>
+                    </div>
+                </div>
             </div>
         </div>
     </form>

@@ -1,16 +1,7 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.views import generic, View
 from .forms import BookingForm
 from .models import Booking
-
-
-class ManageBooking(View):
-    """
-    Customer will be able to view the landing page
-    """
-
-    def get(self, request, *args, **kwargs):
-        return render(request, '../templates/manage_booking.html')
 
 
 def table_booking(request):
@@ -20,7 +11,7 @@ def table_booking(request):
         booking_form = BookingForm(request.POST)
         if booking_form.is_valid():
             booking_form.save()
-            return redirect('manage_booking')
+            return redirect(reverse('booking:manage_booking'))
     else:
         booking_form = BookingForm()
 
@@ -30,22 +21,19 @@ def table_booking(request):
     return render(request, '../templates/booking.html', context)
 
 
-class ViewBooking(View):
-    def get(self, request, *args, **kwargs):
-        bookings = Booking.objects.get()
+class BookingsList(generic.View):
+    """
+    Customer will be able to view their booking/s
+    """
+    model = Booking
+    queryset = Booking.objects.all()
+    template_name = 'manage_booking.html'
+    paginate_by = 3
 
+    def get(self, request, *args, **kwargs):
+        bookings = Booking.objects.all()
         context = {
             'bookings': bookings
         }
 
-        return render(request, '../templates/manage_booking.html', context)
-
-# def view_booking(request):
-
-#     bookings = Booking.objects.all()
-
-#     context = {
-#             'bookings': bookings
-#         }
-
-#     return render(request, '../templates/manage_booking.html', context)
+        return render(request, 'manage_booking.html', context)

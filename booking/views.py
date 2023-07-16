@@ -10,6 +10,7 @@ def table_booking(request):
     if request.method == 'POST':
         booking_form = BookingForm(request.POST)
         if booking_form.is_valid():
+            booking_form.instance.name = request.user
             booking_form.save()
             return redirect(reverse('booking:manage_booking'))
     else:
@@ -31,9 +32,10 @@ class BookingsList(generic.View):
     paginate_by = 3
 
     def get(self, request, *args, **kwargs):
-        bookings = Booking.objects.all()
-        context = {
-            'bookings': bookings
-        }
+        if request.user.is_authenticated:
+            bookings = Booking.objects.filter(name=request.user)
+            context = {
+                'bookings': bookings
+            }
 
-        return render(request, 'manage_booking.html', context)
+            return render(request, 'manage_booking.html', context)

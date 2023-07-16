@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.views import generic, View
+from django.contrib import messages
 from .forms import BookingForm
 from .models import Booking
 
@@ -12,7 +13,10 @@ def table_booking(request):
         if booking_form.is_valid():
             booking_form.instance.name = request.user
             booking_form.save()
+            messages.success(request, 'Booking successful.')
             return redirect(reverse('booking:manage_booking'))
+        else:
+            messages.error(request, 'Booking unsuccessful. Please try again.')
     else:
         booking_form = BookingForm()
 
@@ -48,7 +52,10 @@ def edit_booking(request, booking_id):
         booking_form = BookingForm(request.POST, instance=booking)
         if booking_form.is_valid():
             booking_form.save()
+            messages.success(request, 'Booking updated successfully.')
             return redirect('booking:manage_booking')
+        else:
+            messages.error(request, 'Update unsuccessful. Please try again.')
 
     booking_form = BookingForm(instance=booking)
 
@@ -59,4 +66,5 @@ def delete_booking(request, booking_id):
 
     booking = get_object_or_404(Booking, id=booking_id)
     booking.delete()
+    messages.success(request, 'Booking deleted successfully.')
     return redirect('booking:manage_booking')

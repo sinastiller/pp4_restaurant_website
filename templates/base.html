@@ -71,13 +71,17 @@
                             {% endif %}
                             <ul class="dropdown-menu mb-2">
                                 {% if user.is_authenticated %}
-                                <li class="align-self-end"><a class="dropdown-item" href="{% url 'booking:manage_booking' %}">Manage Booking</a></li>
-                                <li class="align-self-end"><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
+                                <li class="align-self-end"><a class="dropdown-item"
+                                        href="{% url 'booking:manage_booking' %}">Manage Booking</a></li>
+                                <li class="align-self-end"><a class="dropdown-item"
+                                        href="{% url 'account_logout' %}">Logout</a></li>
                                 {% else %}
-                                <li class="align-self-end"><a class="dropdown-item" href="{% url 'account_signup' %}">Sign Up</a></li>
-                                <li class="align-self-end"><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
+                                <li class="align-self-end"><a class="dropdown-item"
+                                        href="{% url 'account_signup' %}">Sign Up</a></li>
+                                <li class="align-self-end"><a class="dropdown-item"
+                                        href="{% url 'account_login' %}">Login</a></li>
                                 {% endif %}
-                                
+
                             </ul>
                         </li>
                     </ul>
@@ -97,11 +101,11 @@
             </div>
         </div>
     </header>
-    
+
     <main>
-    {% block content %}
-    
-    {% endblock content %}
+        {% block content %}
+
+        {% endblock content %}
     </main>
 
     <footer class="footer">
@@ -143,7 +147,21 @@
         integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous">
     </script>
 
-    <script src="../static/js/script.js"></script>
+    <script>
+        function todayDate() {
+            var d = new Date();
+            var n = d.getFullYear() + "  ";
+            return document.getElementById("date").innerHTML = n;
+        };
+
+        todayDate()
+
+        setTimeout(function () {
+            let messages = document.getElementById("msg");
+            let alert = new bootstrap.Alert(messages);
+            alert.close();
+        }, 3000);
+    </script>
 </body>
 
 </html>

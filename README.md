@@ -66,17 +66,25 @@
 ### Languages Used
 
 ### Frameworks, Libraries & Programs Used
+- Django
+- PostgreeSQL
+- Heroku
 - Google Fonts
-- Bootstrap 
+- Am I responsive https://ui.dev/amiresponsive
+- Bootstrap
+- Github
+- Gitpod
+- pep8 https://pep8ci.herokuapp.com/#
+- https://jigsaw.w3.org/css-validator/
+- https://validator.w3.org/
 - https://favicon.io/favicon-generator/
 - cloudinary
 - figma
-- django documentation
-- stackverflow
 - font awesome
 - coolors
 - https://tinyjpg.com/
 - https://cloudconvert.com/jpg-to-webp
+- https://django-allauth.readthedocs.io/en/latest/
 
 
 ## **Deployment & Local Development**
@@ -123,10 +131,17 @@ Please find the carried out testing on [TESTING.md](TESTING.md).
 ## **Credits**
 
 ### Code Used
-- https://www.youtube.com/playlist?list=PLPSM8rIid1a0qiCpbfujex5lZoXr2SRFC
+- https://www.youtube.com/playlist?list=PLBTOBXTz1YFZK0moSgoZq93V_AdvrUGSj - creating menu
 - Hello Django
 - I think therefore i blog
 - https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78 --> for time.choices
+- https://github.com/GeorgianF/Grace-P4-CI for update and delete modal
+- https://github.com/Kaylaesmith1/bed-and-breakfast for reference throughout the project
+- https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md#code-used
+- stackoverflow 
+- W3Schools
+- django documentation
+- Bootstrap 
 
 
 ### Content

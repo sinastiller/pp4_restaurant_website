@@ -66,8 +66,9 @@ body {
 }
 
 .cafe-inside {
-    height: auto;
-    text-align: center;
+    height: 300px;
+    width: 400px;
+    align-items: center;
 }
 
 
@@ -287,6 +288,11 @@ footer p {
         height: 250px;
         margin: 5px 0;
     }
+
+    .manage .btn {
+        width: 6rem;
+        margin: 2px;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -302,6 +308,10 @@ footer p {
 
     .guest p {
         line-height: 1rem;
+    }
+
+    .manage {
+        width: 100%;
     }
 }
 
@@ -325,5 +335,12 @@ footer p {
             width: 300px;
             height: 200px;
         }
-}
 
+        .card {
+            margin-left: 2px;
+        }
+
+        .manage .btn {
+            width: 6rem;
+        }
+    }

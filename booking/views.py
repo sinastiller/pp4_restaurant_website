@@ -38,8 +38,9 @@ class BookingsList(generic.View):
     def get(self, request, *args, **kwargs):
         if request.user.is_authenticated:
             bookings = Booking.objects.filter(name=request.user)
+
             context = {
-                'bookings': bookings
+                'bookings': bookings,
             }
 
             return render(request, 'manage_booking.html', context)

@@ -44,7 +44,7 @@
   ![HTML Validation - Signup Page](media/readme_images/signup.html.png)
 </details>
 <details>
-  <summary>Bookin Page - No errors</summary>
+  <summary>Booking Page - No errors</summary>
   
   ![HTML Validation - Booking Page](media/readme_images/table_booking.html.png)
 </details>
@@ -66,13 +66,13 @@
 </details>
 
 #### CSS
-There were no errors found, when validating CSS.
+There were no errors found when validating CSS.
 
 ![CSS Validation](media/readme_images/css_validation.png)
 
 ### [PEP8 Validator](#pep8validator)
 
-* To verify that the Python Code is written within the correct structure, I tested it in the Code Institute's [PEP8 Validator](https://pep8ci.herokuapp.com/). The code was all clear, and no errors were found.
+To verify that the Python Code is written within the correct structure, I tested it in the Code Institute's [PEP8 Validator](https://pep8ci.herokuapp.com/). The code was all clear, and no errors were found.
 
 #### restaurant_website
 <details>
@@ -207,8 +207,8 @@ Lighthouse was used to test the overall performance and accessibility, which bot
 ### Home Page
 Feature | Action | Expected Result | PASS/FAIL 
 ---|---|---|---
-Homepage | Display | Hompepage is displayed when url is passed intow browser | PASS
-Block Title | Display | Happy Leeks | Vegan Cafe 🌱 should be displayed when on homepage | PASS
+Homepage | Display | Homepage is displayed when url is passed into browser | PASS
+Block Title | Display | Happy Leeks Vegan Cafe 🌱 should be displayed when on homepage | PASS
 Nabvar | Display | When user is not logged in, only links to "Home", "Menu", "My Account" should be visible | PASS
 Nabvar | Display | When user is logged in, the "Book a Table" link should also be visible | PASS
 Navbar Dropdown | Display | When user is not logged in, only links to "Sign Up" and "Login" should be visible | PASS
@@ -227,22 +227,22 @@ Navbar | Click | "Login" should open login.html | PASS
 ### Menu Page
 Feature | Action | Expected Result | PASS/FAIL 
 ---|---|---|---
-Block Title | Display | Happy Leeks | Menu should be displayed when on homepage | PASS
+Block Title | Display | Happy Leeks Menu should be displayed | PASS
 Title | Display | Title should appear as header | PASS
 Menu Card | Display | Should be displayed with four card bodies | PASS
 Menu Title | Display | Should show the name of the four categories | PASS
-Menu Item | Display | Should show the Name of the item, a small description and the price in € | PASS
+Menu Item | Display | Should show the name of the item, a small description and the price in € | PASS
 
-### Sign Up Page
+### Signup Page
 Feature | Action | Expected Result | PASS/FAIL 
 ---|---|---|---
-Block Title | Display | Happy Leeks | Sign Up should be displayed when on homepage | PASS
-Container | Display | Sign Up Container with Sign up Form should be visible | PASS
-Log in | Click | If user has already signed up, they can click on the provided log in link switch to Login Page | PASS
-Username Field | Input | User must enter the preferred username | PASS
+Block Title | Display | Happy Leeks Sign Up should be displayed | PASS
+Container | Display | Signup Container with Signup Form should be visible | PASS
+Log in | Click | If user has already signed up, they can click on the provided login link switch to Login Page | PASS
+Username Field | Input | User must enter their preferred username | PASS
 E-Mail Field | Input | User can enter the e-mail address; only email address possible | PASS
-Password Field | Input | User must enter a secure password; simple ones don't work | PASS
-Passowrd(again) Field | Input | Reenter and confirm previous entered password; passwords need to match | PASS
+Password Field | Input | User must enter a secure password; simple one does not work | PASS
+Password(again) Field | Input | Re-enter and confirm previous entered password; passwords need to match | PASS
 Sign Up Button | Click | Submits user input and creates new account. User is redirected to Home Page | PASS
 Django message | Display | User message will be displayed when user signed up successfully | PASS
 
@@ -250,19 +250,19 @@ Django message | Display | User message will be displayed when user signed up su
 ### Login Page
 Feature | Action | Expected Result | PASS/FAIL 
 ---|---|---|---
-Block Title | Display | Happy Leeks | Login should be displayed when on homepage | PASS
-Container | Display | Login Container with Sign up Form and image should be visible | PASS
+Block Title | Display | Happy Leeks Login should be displayed | PASS
+Container | Display | Login Container with Login Form and image should be visible | PASS
 Sign Up | Click | If user has not yet signed up, they can click on the provided sign up link switch to Sign Up Page | PASS
 Username Field | Input | User must enter their username, which they have signed up with | PASS
 Password Field | Input | User must enter their password, which they have signed up with | PASS
-Remember Me | Tickbox | User can tick the box to save their log in information for log in from now on | PASS 
+Remember Me | Checkbox | User can tick the box to save their log in information for log in from now on | PASS 
 Log In Button | Click | Submits user input and logs in user. User is redirected to Home Page | PASS
 Django message | Display | User message will be displayed when user logged in successfully | PASS
 
 ### Book a Table Page
 Feature | Action | Expected Result | PASS/FAIL 
 ---|---|---|---
-Block Title | Display | Happy Leeks | Book your Table should be displayed when on homepage | PASS
+Block Title | Display | Happy Leeks Book your Table should be displayed | PASS
 Container | Display | Booking Form container should be visible | PASS
 Title | Display | Title should appear as header | PASS
 Number of guests | Display | The user is prompted to enter the number of guests | PASS
@@ -274,7 +274,7 @@ Phone Field | Input | User can only enter 11 numbers; numbers only | PASS
 Date Field | Display | The user is prompted to enter the date for their booking | PASS
 Date Field | Input | User can only enter date format dd/mm/yyyy | PASS
 Time Field | Display | The user is prompted to enter the time for their booking | PASS
-Time Field | Input | User can ony choose any of the times provided | PASS
+Time Field | Input | User can only choose any of the times provided | PASS
 Make Reservation | Click | If reservation is valid, user will be redirected to Manage Booking page | PASS
 Django message | Display | User message will be displayed when booking was successfull | PASS
 Make Reservation | Click | If reservation is invalid, user will be prompted to change their input accordingly | PASS
@@ -283,22 +283,24 @@ Django message | Display | User message will be displayed when booking was unsuc
 ### Manage Booking Page
 Feature | Action | Expected Result | PASS/FAIL 
 ---|---|---|---
+Block Title | Display | Happy Leeks Manage Your Booking should be displayed | PASS
 Bookings | Display | User's booking should be visible to them | PASS
-Booking Container | Display | Should contain the name of booking, date & time, number of guest, edit & delete button | PASS
-Edit | Click | User is redirected to Edit Booking Page with field already filled in with the details made at the booking | PASS
-Update Reservation | Click | Modal pops up for user to confirm their booking update. If close selected reservation won't update. If update is selected booking will be updated. | PASS
+Booking Container | Display | Should contain the name of booking, date & time, number of guests, edit & delete button | PASS
+Edit | Click | User is redirected to Edit Booking Page with fields already filled in with the details made at the booking | PASS
+Update Reservation | Click | Modal pops up for user to confirm their booking update. If "close" selected reservation won't update. If "update" is selected booking will be updated. | PASS
 Update Reservation | Click | Updates reservation if valid and redirects user to Manage Booking Page with updated booking displayed | PASS
 Django message | Display | User message will be displayed when booking was updated successfully | PASS
 Update Reservation | Click | If update reservation is not valid user is asked to manage their input | PASS
 Django message | Display | User message will be displayed when booking update was unsuccessfull | PASS
-Delete | Click | Modal pop up for user to confirm deleting their booking. If  close selected, booking won't be deleted. If delete selcted, booking will be deleted.| PASS
+Delete | Click | Modal pop up for user to confirm deleting their booking. If "close" selected, booking won't be deleted. If "delete" selcted, booking will be deleted.| PASS
 Django message | Display | User message will be displayed when deleting booking was unsuccessfull | PASS
 Confirmed Delete | Display | Selected booking will disappear from display at Manage Booking Page | PASS
 
 ### Logout Page
 Feature | Action | Expected Result | PASS/FAIL 
 ---|---|---|---
-Sign Out Prompt | Display | User is asked if they're sure to sign out | PASS
+Block Title | Display | Happy Leeks Logout should be displayed | PASS
+Sign Out prompt | Display | User is asked if they're sure to sign out | PASS
 Sign Out button | Click | User is logged out and redirected to Home Page | PASS
 Django message | Display | User message will be displayed when logout was successfull | PASS
 

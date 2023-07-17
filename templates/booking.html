@@ -4,11 +4,11 @@
 {% block content %}
 <div class="container card card-body mt-5 mb-5 mx-auto booking">
     <form action="{% url 'booking:table_booking' %}" method="POST">
-    {{ form.non_field_errors }}
-    {% csrf_token %}
-        
+        {{ form.non_field_errors }}
+        {% csrf_token %}
+
         <div class="row guest justify-content-center">
-            
+
             <div class="col-md-6 mt-4 mb-4">
                 <h1 class="text-center">Make a reservation:</h1>
                 <h5 class="text-center">Select number of guests:</h5>
@@ -20,21 +20,20 @@
                 </div>
                 <p class="text-center mt-3">For a booking for more than 4 people please call the restaurant.</p>
             </div>
-            
+
         </div>
         <div class="row name-phone justify-content-center">
             <div class="col-md-6 mb-4">
                 <div class="row justify-content-around mx-5">
                     <div class="col-lg-5 col-md-12 text-center m-1">
-                            {{ form.name.errors }}
-                            <p>Name:</p>
-                            {{ form.name }}
-                        
+                        {{ form.name.errors }}
+                        <p>Name:</p>
+                        {{ form.name }}
                     </div>
                     <div class="col-lg-5 col-md-12 text-center m-1">
-                            {{ form.phone.errors }}
-                            <p>Phone Number:</p>
-                            {{ form.phone }}
+                        {{ form.phone.errors }}
+                        <p>Phone Number:</p>
+                        {{ form.phone }}
                     </div>
                 </div>
             </div>
@@ -44,9 +43,8 @@
                 <h5 class="text-center">Please select a date:</h5>
                 <div class="row justify-content-around mx-5">
                     <div class="col-lg-5 col-md-12 text-center m-1">
-                            {{ form.date.errors }}
-                            {{ form.date }}
-                        
+                        {{ form.date.errors }}
+                        {{ form.date }}
                     </div>
                 </div>
             </div>
@@ -56,8 +54,8 @@
                 <h5 class="text-center">Please select a time:</h5>
                 <div class="row justify-content-around mx-5">
                     <div class="col-lg-5 col-md-12 text-center m-1">
-                            {{ form.time.errors }}
-                            {{ form.time }}
+                        {{ form.time.errors }}
+                        {{ form.time }}
                     </div>
                 </div>
             </div>

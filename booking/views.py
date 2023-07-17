@@ -6,6 +6,9 @@ from .models import Booking
 
 
 def table_booking(request):
+    """
+    Lets user create a booking
+    """
     booking_form = BookingForm()
 
     if request.method == 'POST':
@@ -47,7 +50,9 @@ class BookingsList(generic.View):
 
 
 def edit_booking(request, booking_id):
-
+    """
+    Lets user updated their booking
+    """
     booking = get_object_or_404(Booking, id=booking_id)
     if request.method == 'POST':
         booking_form = BookingForm(request.POST, instance=booking)
@@ -64,7 +69,9 @@ def edit_booking(request, booking_id):
 
 
 def delete_booking(request, booking_id):
-
+    """
+    Lets user delete their booking
+    """
     booking = get_object_or_404(Booking, id=booking_id)
     booking.delete()
     messages.success(request, 'Booking deleted successfully.')

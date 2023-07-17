@@ -3,6 +3,9 @@ from .models import Menu, Category
 
 
 def menu_list(request):
+    """
+    Creates menu
+    """
     menu_list = Menu.objects.all()
     categories = Category.objects.all()
 

@@ -4,7 +4,7 @@ The website includes a Menu, Reservation options and account creations for the i
 
 ![Am I responsive image](media/readme_images/responsive.png)
 
-Link to deployed website : [Happy Leeks](https://8000-sinastiller-pp4restaura-4dmd1gro0s9.ws-eu101.gitpod.io/)
+Link to deployed website : [Happy Leeks](https://restaurant-website-ee029a10692a.herokuapp.com/)
 
 ## Contents
 

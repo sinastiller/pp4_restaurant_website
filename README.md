@@ -170,33 +170,35 @@ The Logout Booking page can be reached via the dropdown menu once the user has l
 ### [Future Considerations](#future-considerations)
 Future features that could be implemented on the website could include being able to add reviews and view reviews of other customers. Another implementation could be an online ordering system.
 
-### Accessibility
+### [Accessibility](#accessibility)
+For better accessibility  I added alt-labels to all my images for vision-impaired users. Accessibilty was also tested on lighthouse, which reached a very high score on every testing.
 
+## [**Technologies Used**](#technologies-used)
 
-## **Technologies Used**
+### [Languages Used](#languages-used)
+* *HTML*
+* *Python*
+* *CSS*
+* *JavaScript*
 
-### Languages Used
-
-### Frameworks, Libraries & Programs Used
-- Django
-- PostgreeSQL
-- Heroku
-- Google Fonts
-- Am I responsive https://ui.dev/amiresponsive
-- Bootstrap
-- Github
-- Gitpod
-- pep8 https://pep8ci.herokuapp.com/#
-- https://jigsaw.w3.org/css-validator/
-- https://validator.w3.org/
-- https://favicon.io/favicon-generator/
-- cloudinary
-- figma
-- font awesome
-- coolors
-- https://tinyjpg.com/
-- https://cloudconvert.com/jpg-to-webp
-- https://django-allauth.readthedocs.io/en/latest/
+### [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
+- [Django](https://www.djangoproject.com/) - Main python framework used for this project.
+- [ElephantSQL](https://www.elephantsql.com/) - Stores database for this project.
+- [Heroku](https://heroku.com/) - Cloud-based platform used to deploy this project.
+- [Bootstrap 5.3](https://getbootstrap.com/) - CSS styling used for decorating HTML content.
+- [Github](https://github.com/) - Used for version control and agile development progress.
+- [Gitpod](https://www.gitpod.io/) - Used as cloud-development platform.
+- [Google Fonts](https://fonts.google.com/) - Used for imported fonts for this project.
+- [Am I responsive](https://ui.dev/amiresponsive) - Used to check if website is fully responsive.
+- [PEP8](https://pep8ci.herokuapp.com/#) - Used to validate python code.
+- [W3C](https://validator.w3.org/) - Used to validate HTML and CSS.
+- [Favicon](https://favicon.io/favicon-generator/) - Used to create Favicon for this project.
+- [Cloudinary](https://cloudinary.com/) - Used to store website images of this project on a cloud-platform.
+- [Figma](https://www.figma.com/) - Used to design wireframes.
+- [Font Awesome](https://fontawesome.com/) - Used for icons.
+- [Coolors](https://coolors.co/) - Used to create colour palette.
+- [Tiny JPG](https://tinyjpg.com/) - Used to convert images.
+- [Cloud Convert](https://cloudconvert.com/jpg-to-webp) - Used to convert images.
 
 
 ## **Deployment & Local Development**
@@ -254,6 +256,7 @@ Please find the carried out testing on [TESTING.md](TESTING.md).
 - W3Schools
 - django documentation
 - Bootstrap 
+- https://django-allauth.readthedocs.io/en/latest/
 
 
 ### Content

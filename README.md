@@ -201,41 +201,96 @@ For better accessibility  I added alt-labels to all my images for vision-impaire
 - [Cloud Convert](https://cloudconvert.com/jpg-to-webp) - Used to convert images.
 
 
-## **Deployment & Local Development**
-## Deployment
+## [**Deployment & Local Development**](#deployment--local-development)
+
 This project was created by using Gitpod. I used the pre-built template from [Code Institute](https://github.com/Code-Institute-Org/python-essentials-template).
 The following commands were used:
 * **git add .** - to add all the changes.
 * **git commit -m "..."** - to commit all the changes to the local repository.
 * **git push** - to push the committed changes to the GitHub repository.
 
-### **Deployment to HerokuApp**
-1. Create a list of requirements, commit and push to GitHub.
-2. Create Account with Heroku.
-3. On the Heroku Dashboard, select "create new app".
-4. Give the app a name (it must be unique, as each app name can only exist once) and choose your current region.
-5. Click "Create App".
-6. On the "Settings" Tab, scroll to Config Vars.
-7. Create a Config Var.
-8. In the "KEY" field enter CREDS and for the "VALUE" field copy the creds.json link from your file and click "Add".
-9. In the "KEY" field enter PORT and for the "VALUE" field enter 8000 and click "Add".
-10. Add Buildpacks.
-11. Choose the first one to be python and press "save".
-12. Choose the second one to be nodejs and press "save".
-13. Move to "Deploy" Tab.
-14. Select "GitHub" as Deploment Methond and connect to your GitHub and the repository you want to upload.
-15. Choose between automatic/manual deploy option.
-16. After app was successfully deployed, click the "View" button to connect to webpage.
+### [Deployment](#deployment)
+In the Terminal:
+1. Install Django and gunicorn.(pip3 install 'django<4' gunicorn)
+2. Install supporting libraries.(pip3 install dj_database_url==0.5.0 psycopg2)
+3. Install Cloudinary Libraries. (pip3 install dj3-cloudinary-storage)
+4. Create requirements file.(pip3 freeze --local > requirements.txt)
+5. Create Project.(django-admin startproject PROJ_NAME .)
+6. Create App.(python3 manage.py startapp APP_NAME)
+In settings.py:
+7. Add to installed apps.('APP_NAME')
+In the Terminal
+8. Migrate Changes.(python3 manage.py migrate)
+9. Run Server to Test.(python3 manage.py runserver)
+On elephantsql.com:
+10. Log in to your ElephantSQL account.
+11. Click “Create New Instance”.
+12. Set up your plan.
+13. Click “Select Region”.
+14. Click “Review”.
+15. Return to the ElephantSQL dashboard and click on the database instance name for this project.
+16. Copy your ElephantSQL database URL using the Copy icon. It will start with postgres:// .
+On heroku.com:
+17. Create new Heroku App.
+18. Open the settings tab.
+19. Click Reveal Config Vars.
+20. Add a Config Var called DATABASE_URL and add ElephantSQL database url.
+In the terminal:
+21. Create new env.py file on top level directory.
+In env.py:
+22. Import os library.
+23. Set environment variables.
+24. Add in secret key.
+On heroku.com:
+25. Add Secret Key to Config Vars, (SECRET_KEY)
+In settings.py:
+26. Reference env.py.
+27. Remove the insecure secret key and replace.(os.environ.get('SECRET_KEY'))
+28. Comment out the old DataBases Section.
+29. Add new DATABASES Section. (dj_database_url.parse(os.environ.get("DATABASE_URL")))
+In the terminal:
+30. Save all files and Make Migrations.
+On cloudinary.com:
+31. Copy your CLOUDINARY_URL from Clouinary Dashboard.
+In env.py:
+32. Add Cloudinary URL to env.py.
+On heroku.com:
+33. Add Cloudinary URL to Heroku Config Vars.(CLOUDINARY_URL)
+34. Add DISABLE_COLLECTSTATIC to Heroku Config Vars. (value = 1)
+In settings.py:
+35. Add Cloudinary Libraries to installed apps. ('cloudinary_storage', 'cloudinary',)
+36. Tell Django to use Cloudinary to store media and static files.
+37. Link file to the templates directory in Heroku.(TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates'))
+38. Change the templates directory to TEMPLATES_DIR.
+39. Add Heroku Hostname to ALLOWED_HOSTS. ("PROJ_NAME.herokuapp.com", "localhost")
+In the terminal:
+40. Create a Procfile on the top level directory.
+In Procfile:
+41. Add web: gunicorn PROJ_NAME.wsgi.
+Final deployment:
+42. Set DEBUG = False in the settings.py
+43. On Heroku select "GitHub" as Deploment Method and connect to your GitHub and the repository you want to upload.
+44. Choose between automatic/manual deploy option. 
+45. After app was successfully deployed, click the "View" button to view the deployed live site.
 
 
-### Deployment
-
-### Local Development
+### [Local Development](#local-development)
 
 * #### How to Fork
+1. Navigate to [project repository](https://github.com/sinastiller/pp4_restaurant_website).
+2. Click on "For" in the top right corner.
+3. Under "Owner," select the dropdown menu and click an owner for the forked repository.
+4. To change the name of repo, enter a new name.
+5. Enter description(optional).
+6. Choose which branches to include.
+7. Click "Create Fork".
 
 * #### How to Clone
-
+1. Navigate to [project repository](https://github.com/sinastiller/pp4_restaurant_website).
+2. Click on the button Code next to the Gitpod button.
+3. Choose between HTTPS, SSH and GitHub CLI and copy the link.
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory.
 
 ## **Testing**
 

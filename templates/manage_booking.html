@@ -16,24 +16,26 @@
             <p class="mb-3"><strong>Number of Guests:</strong> {{ booking.number_of_guests }}</p>
           </div>
           <a href="{% url 'booking:edit_booking' booking.id %}" class="btn btn-success">Edit</a>
-          <a href="{% url 'booking:delete_booking' booking.id %}" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteMessage">Delete</a>      
-          <div class="modal fade" id="deleteMessage" tabindex="-1" aria-labelledby="deleteMessageLabel" aria-hidden="true">
+          <a href="{% url 'booking:delete_booking' booking.id %}" class="btn btn-danger" data-bs-toggle="modal"
+            data-bs-target="#deleteMessage">Delete</a>
+          <div class="modal fade" id="deleteMessage" tabindex="-1" aria-labelledby="deleteMessageLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="deleteMessageLabel">Confirm Delete Request</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Are you sure you want to delete your reservation?
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="mt-2 mb-3 btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
-                        <a class="mt-2 mb-3 btn btn-secondary" href="{% url 'booking:delete_booking' booking.id %}">DELETE</a>
-                    </div>
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="deleteMessageLabel">Confirm Delete Request</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                <div class="modal-body">
+                  Are you sure you want to delete your reservation?
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="mt-2 mb-3 btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+                  <a class="mt-2 mb-3 btn btn-secondary" href="{% url 'booking:delete_booking' booking.id %}">DELETE</a>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </div>

@@ -102,10 +102,70 @@ I have used [Figma](https://www.figma.com/) to create the wireframes. Each wiref
 ![Wireframe - Manage Booking Page](media/readme_images/editbooking_wireframe.png)
 
 
+## [**Features**](#features)
 
-## **Features**
+### [General features](#general-features)
+The webpage consists of a Homepage, Menu page, Booking page, Manage Booking page, Login page, Signup page and Logout page.
 
-### General features
+All of these pages contain:
+* A responsive navigation bar:
+    * The name of the restaurant is positioned on the left-hand side with the logo on the right of it. Both link to Home Page.
+    * The other navigation links are located on the right-hand side.
+    * The colour is a shade of light green. 
+    ![Navbar - not logged in](media/readme_images/navbar1_not%20registered.png)
+    * When user is not logged on the dropdown menu links include link to Sign Up and Login.
+    ![Navbar - not logged in](media/readme_images/navbar2_not%20registered.png)
+    * When user is loggged in, the link to Book a Table appears in the navbar as well as links to Manage Booking and Logout on the dropdown menu.
+    ![Navbar - logged in](media/readme_images/navbar1_loggedin.png)
+    ![Navbar - logged in](media/readme_images/navbar2_loggedin.png)
+    * When hovered over navbar links colour changes to a darker shade.
+
+* A responsive footer :
+    * The footer contains the social media icons of Facebook, Instagram, Twitter, and Pinterest, which open all in a new tab when clicked on.
+    * It also contains the copyright with the current year.
+    ![Footer](media/readme_images/footer.png)
+
+#### Home Page
+
+The Homepage is the langing page of the website, where a user lands first when opening the url. It contains the navbar at the top and footer at the bottom. Between the user can find a small about section with an image of the interior of the restaurant, a gallery section to view some of the dishes, the decoration and atmosphere of the restaurant. Below is the essential information section, where the user can find the location, opening times and contact details.
+* About Section
+    ![About Section](media/readme_images/about_section.png)
+* Gallery Section
+    ![Gallery Section](media/readme_images/gallery_section.png)
+* Essential Information Section
+![Essential Information Section](media/readme_images/essentialinfo_section.png)
+
+#### Menu Page
+The Menu page can be reached from the landing page. It contains the navbar at the top and footer at the bottom. The menu contains four categories (COOL CRAVINGS, HOT 'N' TASTY TREATS, SIP & SAVOUR, SWEET SURRENDERS). At the top of each menu card the user can find the food category, with the individual menu items listed below including a small description of the item and the price.
+![Menu Page](media/readme_images/menu.png)
+
+#### Signup Page
+The Signup page can be reached via the dropdown link from the navbar. It contains the navbar at the top and footer at the bottom. The user will be prompted with a Signup form, to enter their username, email(optional), password and confirm password. If they have already an account the can reach the Login page via the link just at the top of the Signup form. Only valid input is allowed and user must click Signup button to proceed with registering. Once completed the user will be redirected to the landing page.
+![Signup Page](media/readme_images/signup.png)
+
+#### Login Page
+The Login page can be reached via the dropdown link from the navbar. It contains the navbar at the top and footer at the bottom. The user will be prompted with a Login form, to enter their username and password, which they have created an account with. If they have not yet created an account the can reach the Signup page via the link just at the top of the Login form. As only valid input is allowed, a message will pop up that login was unsuccessful if user has entered incorrect details. User must click Log In button to log in. Once completed the user will be redirected to the landing page and message will pop up that user is logged in.
+![Login Page](media/readme_images/login.png)
+
+#### Booking Page
+The Booking page can be reached via the navbar once the user has logged in. It contains the navbar at the top and footer at the bottom. The user will be prompted with a Booking form, to select the number of guests, their name, phone number, preferred date and time. To fulfill the booking the have to confirm by clicking the "Make reservation" button. If there was any non-valid input, a message will pop up that booking was unsuccessful and the user will be asked to re-enter the details before they can proceed. Once booking is complete the user will be redirected to the Manage Booking page and a message will pop up that booking was successful.
+![Booking Page](media/readme_images/make_booking.png)
+
+#### Manage Booking Page
+The Manage Booking page can be reached via the dropdown menu once the user has logged in. It contains the navbar at the top and footer at the bottom. It displays any existing bookings to the user, that were made by them. Information containing the booking name, date & time of booking and the number of the attending guest. The user has also the possibilty to update and delete their booking. 
+![Manage Booking](media/readme_images/manage_booking.png)
+By clicking on "Edit", the user lands on edit_booking.html where they can updated their booking. It is the same booking form used for booking a table, but with details already filled in, when the booking was made. The user is able to make any adjustments and once happy can confirm their booking by "Update Reservation". If there was any non-valid input, a message will pop up that update was unsuccessful and the user will be asked to re-enter the details. 
+![Edit Booking](media/readme_images/edit_booking.png)
+If all valid a modal will pop up for the user to confirm their request. 
+![Edit Modal](media/readme_images/update_modal.png)
+Once accepted, user will be redirected to Manage Booking page and a message will pop up that update was successfull. They now can view their updated booking.
+
+If they choose to delete and existing booking, they can do so by clicking on "Delete". A modal will pop up to assure them of their action. Once booking is deleted a message will pop up confirming the deleted booking. 
+![Delete Modal](media/readme_images/delete_modal.png)
+
+#### Logout Page
+The Logout Booking page can be reached via the dropdown menu once the user has logged in. It contains the navbar at the top and footer at the bottom. The user is asked to confirm if they want to sign out. If user proceeds, they will be directed to the landing page. A message will pop up to let them know that they have logged out successfully.
+![Logout Page](media/readme_images/logout.png)
 
 ### Future Considerations
 

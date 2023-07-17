@@ -167,7 +167,8 @@ If they choose to delete and existing booking, they can do so by clicking on "De
 The Logout Booking page can be reached via the dropdown menu once the user has logged in. It contains the navbar at the top and footer at the bottom. The user is asked to confirm if they want to sign out. If user proceeds, they will be directed to the landing page. A message will pop up to let them know that they have logged out successfully.
 ![Logout Page](media/readme_images/logout.png)
 
-### Future Considerations
+### [Future Considerations](#future-considerations)
+Future features that could be implemented on the website could include being able to add reviews and view reviews of other customers. Another implementation could be an online ordering system.
 
 ### Accessibility
 

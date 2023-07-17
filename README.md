@@ -276,7 +276,7 @@ Final deployment:
 
 ### [Local Development](#local-development)
 
-* #### How to Fork
+* #### [How to Fork](#how-to-fork)
 1. Navigate to [project repository](https://github.com/sinastiller/pp4_restaurant_website).
 2. Click on "For" in the top right corner.
 3. Under "Owner," select the dropdown menu and click an owner for the forked repository.
@@ -285,39 +285,44 @@ Final deployment:
 6. Choose which branches to include.
 7. Click "Create Fork".
 
-* #### How to Clone
+* #### [How to Clone](#how-to-clone)
 1. Navigate to [project repository](https://github.com/sinastiller/pp4_restaurant_website).
 2. Click on the button Code next to the Gitpod button.
 3. Choose between HTTPS, SSH and GitHub CLI and copy the link.
 4. Open Git Bash.
 5. Change the current working directory to the location where you want the cloned directory.
 
-## **Testing**
+## [**Testing**](#testing)
 
 Please find the carried out testing on [TESTING.md](TESTING.md).
 
 
-## **Credits**
+## [**Credits**](#credits)
 
-### Code Used
-- https://www.youtube.com/playlist?list=PLBTOBXTz1YFZK0moSgoZq93V_AdvrUGSj - creating menu
-- Hello Django
-- I think therefore i blog
-- https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78 --> for time.choices
-- https://github.com/GeorgianF/Grace-P4-CI for update and delete modal
-- https://github.com/Kaylaesmith1/bed-and-breakfast for reference throughout the project
-- https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md#code-used
-- stackoverflow 
-- W3Schools
-- django documentation
-- Bootstrap 
-- https://django-allauth.readthedocs.io/en/latest/
+### [Code Used](#code-used)
+- [Django Cocumentation](https://docs.djangoproject.com/en/4.2/)
+- [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- [W3Schools](https://www.w3schools.com/)
+- [Stackoverflow](https://stackoverflow.com/)
+- [Hello Django Walkthorugh Project](https://github.com/ckz8780/ci-fsf-hello-django/tree/c13b414fd2e87a54b4f2788ceffec55be4ade925)
+- [I think therefore I blog Walkthorugh Project](https://github.com/Code-Institute-Solutions/Django3blog)
+- [Django ALLauth](https://django-allauth.readthedocs.io/en/latest/) - used as reference when creating account authorisation.
+- [Kayla's Bed and Breakfast](https://github.com/Kaylaesmith1/bed-and-breakfast) - used for general reference, ideas and logic throughout the project.
+- [Youtube](https://www.youtube.com/playlist?list=PLBTOBXTz1YFZK0moSgoZq93V_AdvrUGSj) - used as a reference when creating the menu.
+- [Django Tutorial](https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78) - used as reference for creating set times on the booking form.
+- [Grace's Repository](https://github.com/GeorgianF/Grace-P4-CI) - used as reference for update and delete modal
+- [Kera Cudmore's sample readme](https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md#code-used) - used when creating README.md and TESTING.md
 
 
-### Content
-- Menu from https://www.kyndcommunity.com/pages/kyndcafe, https://cafeorganic.co/
+### [Content](#content)
+The Menu content was created from [KYND Cafe](https://www.kyndcommunity.com/pages/kyndcafe),[Cafe Organic](https://cafeorganic.co/), and my own creations.
 
-### Media
-- unsplash
-- pexels
-### Acknowledgements
+### [Media](#media)
+The images were downloaded from [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/).
+
+### [Acknowledgements](#acknowledgements)
+I would like to express my sincere gratitude to my mentor, Jubril Akolade, for his invaluable guidance, unwavering support, and endless patience throughout the entire project. 
+
+Additionally, I would like to extend a special thanks to the Tutoring Team at Code Institute, who provided continuous assistance whenever I encountered challenges, as well as the exceptional Slack Community, whose members were always ready to lend a helping hand. 
+
+I am truly grateful to all of you for your invaluable guidance and support throughout this project!

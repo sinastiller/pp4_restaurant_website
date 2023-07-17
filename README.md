@@ -44,7 +44,7 @@ Link to deployed website : [Happy Leeks](https://8000-sinastiller-pp4restaura-4d
 
 ## [**User Experience**](#user-experience)
 
-Happy Leeks should invite peole to visit the cafe. The reservation system makes it possibe for the customer to book a table in addvance.
+Happy Leeks should invite peole to visit the cafe. The reservation system makes it possibe for the customer to book a table in advance.
 
 ### [User Stories](#user-stories)
 
@@ -78,7 +78,7 @@ I have imported the following Google Fonts:
 Imagery is used regarding restaurant environment and food content on the website. They are taken from various websites, which are credited down below in the [Credits](#credits) section.
 
 ### [Wireframes](#wireframes)
-I have used [Figma](https://www.figma.com/) to create the wireframes. Each wireframe stands for the .html pages. Boxes with an X-line stand for an image. Subject is to change during the production of this website.
+I have used [Figma](https://www.figma.com/) to create the wireframes. Each wireframe stands for the individual .html pages. Boxes with an X-line stand for an image. Subject is to change during the production of this website.
 
 #### Home Page
 ![Wireframe - Home Page](media/readme_images/landingpage_wireframe.png)
@@ -113,12 +113,12 @@ All of these pages contain:
     * The other navigation links are located on the right-hand side.
     * The colour is a shade of light green. 
     ![Navbar - not logged in](media/readme_images/navbar1_not%20registered.png)
-    * When user is not logged on the dropdown menu links include link to Sign Up and Login.
+    * When user is not logged in, the dropdown menu links include link to Sign Up and Login.
     ![Navbar - not logged in](media/readme_images/navbar2_not%20registered.png)
     * When user is loggged in, the link to Book a Table appears in the navbar as well as links to Manage Booking and Logout on the dropdown menu.
     ![Navbar - logged in](media/readme_images/navbar1_loggedin.png)
     ![Navbar - logged in](media/readme_images/navbar2_loggedin.png)
-    * When hovered over navbar links colour changes to a darker shade.
+    * When hovered over navbar links' colour changes to a darker shade.
 
 * A responsive footer :
     * The footer contains the social media icons of Facebook, Instagram, Twitter, and Pinterest, which open all in a new tab when clicked on.
@@ -127,7 +127,7 @@ All of these pages contain:
 
 #### Home Page
 
-The Homepage is the langing page of the website, where a user lands first when opening the url. It contains the navbar at the top and footer at the bottom. Between the user can find a small about section with an image of the interior of the restaurant, a gallery section to view some of the dishes, the decoration and atmosphere of the restaurant. Below is the essential information section, where the user can find the location, opening times and contact details.
+The Homepage is the landing page of the website, where a user lands first when opening the url. It contains the navbar at the top and footer at the bottom. Between the user can find a small about section with an image of the interior of the restaurant, a gallery section to view some of the dishes, the decoration and atmosphere of the restaurant. Below is the essential information section, where the user can find the location, opening times and contact details.
 * About Section
     ![About Section](media/readme_images/about_section.png)
 * Gallery Section
@@ -140,7 +140,7 @@ The Menu page can be reached from the landing page. It contains the navbar at th
 ![Menu Page](media/readme_images/menu.png)
 
 #### Signup Page
-The Signup page can be reached via the dropdown link from the navbar. It contains the navbar at the top and footer at the bottom. The user will be prompted with a Signup form, to enter their username, email(optional), password and confirm password. If they have already an account the can reach the Login page via the link just at the top of the Signup form. Only valid input is allowed and user must click Signup button to proceed with registering. Once completed the user will be redirected to the landing page.
+The Signup page can be reached via the dropdown link from the navbar. It contains the navbar at the top and footer at the bottom. The user will be prompted with a Signup form, to enter their username, email(optional), password and confirm password. If they have already an account, they can reach the Login page via the link just at the top of the Signup form. Only valid input is allowed and user must click Signup button to proceed with registering. Once completed the user will be redirected to the landing page and a message will pop up that user has signed up successfully.
 ![Signup Page](media/readme_images/signup.png)
 
 #### Login Page
@@ -148,19 +148,20 @@ The Login page can be reached via the dropdown link from the navbar. It contains
 ![Login Page](media/readme_images/login.png)
 
 #### Booking Page
-The Booking page can be reached via the navbar once the user has logged in. It contains the navbar at the top and footer at the bottom. The user will be prompted with a Booking form, to select the number of guests, their name, phone number, preferred date and time. To fulfill the booking the have to confirm by clicking the "Make reservation" button. If there was any non-valid input, a message will pop up that booking was unsuccessful and the user will be asked to re-enter the details before they can proceed. Once booking is complete the user will be redirected to the Manage Booking page and a message will pop up that booking was successful.
+The Booking page can be reached via the navbar once the user has logged in. It contains the navbar at the top and footer at the bottom. The user will be prompted with a Booking form, to select the number of guests, their name, phone number, preferred date and time. To fullfill the booking they have to confirm by clicking the "Make reservation" button. If there was any non-valid input, a message will pop up that booking was unsuccessful and the user will be asked to re-enter the details before they can proceed. Once booking is complete the user will be redirected to the Manage Booking page and a message will pop up that booking was successful.
 ![Booking Page](media/readme_images/make_booking.png)
 
 #### Manage Booking Page
-The Manage Booking page can be reached via the dropdown menu once the user has logged in. It contains the navbar at the top and footer at the bottom. It displays any existing bookings to the user, that were made by them. Information containing the booking name, date & time of booking and the number of the attending guest. The user has also the possibilty to update and delete their booking. 
+The Manage Booking page can be reached via the dropdown menu once the user has logged in. It contains the navbar at the top and footer at the bottom. It displays any existing bookings to the user, that were made by them. Information containing the booking name, date & time of booking and the number of the attending guests. The user has also the possibilty to update and delete their booking. 
 ![Manage Booking](media/readme_images/manage_booking.png)
-By clicking on "Edit", the user lands on edit_booking.html where they can updated their booking. It is the same booking form used for booking a table, but with details already filled in, when the booking was made. The user is able to make any adjustments and once happy can confirm their booking by "Update Reservation". If there was any non-valid input, a message will pop up that update was unsuccessful and the user will be asked to re-enter the details. 
+
+By clicking on "Edit", the user lands on edit_booking.html where they can updated their booking. It is the same booking form used for booking a table, but with details already filled in, from when the booking was made. The user is able to make any adjustments and once happy can confirm their booking by "Update Reservation". If there was any non-valid input, a message will pop up that update was unsuccessful and the user will be asked to re-enter the details. 
 ![Edit Booking](media/readme_images/edit_booking.png)
 If all valid a modal will pop up for the user to confirm their request. 
 ![Edit Modal](media/readme_images/update_modal.png)
 Once accepted, user will be redirected to Manage Booking page and a message will pop up that update was successfull. They now can view their updated booking.
 
-If they choose to delete and existing booking, they can do so by clicking on "Delete". A modal will pop up to assure them of their action. Once booking is deleted a message will pop up confirming the deleted booking. 
+If they choose to delete an existing booking, they can do so by clicking on "Delete". A modal will pop up to assure them of their action. Once booking is deleted a message will pop up confirming the deleted booking. 
 ![Delete Modal](media/readme_images/delete_modal.png)
 
 #### Logout Page
@@ -210,19 +211,19 @@ The following commands were used:
 * **git push** - to push the committed changes to the GitHub repository.
 
 ### [Deployment](#deployment)
-In the Terminal:
+#### In the Terminal:
 1. Install Django and gunicorn.(pip3 install 'django<4' gunicorn)
 2. Install supporting libraries.(pip3 install dj_database_url==0.5.0 psycopg2)
 3. Install Cloudinary Libraries. (pip3 install dj3-cloudinary-storage)
 4. Create requirements file.(pip3 freeze --local > requirements.txt)
 5. Create Project.(django-admin startproject PROJ_NAME .)
 6. Create App.(python3 manage.py startapp APP_NAME)
-In settings.py:
+#### In settings.py:
 7. Add to installed apps.('APP_NAME')
-In the Terminal
+#### In the Terminal
 8. Migrate Changes.(python3 manage.py migrate)
 9. Run Server to Test.(python3 manage.py runserver)
-On elephantsql.com:
+#### On elephantsql.com:
 10. Log in to your ElephantSQL account.
 11. Click “Create New Instance”.
 12. Set up your plan.
@@ -230,44 +231,44 @@ On elephantsql.com:
 14. Click “Review”.
 15. Return to the ElephantSQL dashboard and click on the database instance name for this project.
 16. Copy your ElephantSQL database URL using the Copy icon. It will start with postgres:// .
-On heroku.com:
+#### On heroku.com:
 17. Create new Heroku App.
 18. Open the settings tab.
 19. Click Reveal Config Vars.
 20. Add a Config Var called DATABASE_URL and add ElephantSQL database url.
-In the terminal:
+#### In the terminal:
 21. Create new env.py file on top level directory.
-In env.py:
+#### In env.py:
 22. Import os library.
 23. Set environment variables.
 24. Add in secret key.
-On heroku.com:
+#### On heroku.com:
 25. Add Secret Key to Config Vars, (SECRET_KEY)
-In settings.py:
+#### In settings.py:
 26. Reference env.py.
 27. Remove the insecure secret key and replace.(os.environ.get('SECRET_KEY'))
 28. Comment out the old DataBases Section.
 29. Add new DATABASES Section. (dj_database_url.parse(os.environ.get("DATABASE_URL")))
-In the terminal:
+#### In the terminal:
 30. Save all files and Make Migrations.
-On cloudinary.com:
+#### On cloudinary.com:
 31. Copy your CLOUDINARY_URL from Clouinary Dashboard.
-In env.py:
+#### In env.py:
 32. Add Cloudinary URL to env.py.
-On heroku.com:
+#### On heroku.com:
 33. Add Cloudinary URL to Heroku Config Vars.(CLOUDINARY_URL)
 34. Add DISABLE_COLLECTSTATIC to Heroku Config Vars. (value = 1)
-In settings.py:
+#### In settings.py:
 35. Add Cloudinary Libraries to installed apps. ('cloudinary_storage', 'cloudinary',)
 36. Tell Django to use Cloudinary to store media and static files.
 37. Link file to the templates directory in Heroku.(TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates'))
 38. Change the templates directory to TEMPLATES_DIR.
 39. Add Heroku Hostname to ALLOWED_HOSTS. ("PROJ_NAME.herokuapp.com", "localhost")
-In the terminal:
+#### In the terminal:
 40. Create a Procfile on the top level directory.
-In Procfile:
+#### In Procfile:
 41. Add web: gunicorn PROJ_NAME.wsgi.
-Final deployment:
+#### Final deployment:
 42. Set DEBUG = False in the settings.py
 43. On Heroku select "GitHub" as Deploment Method and connect to your GitHub and the repository you want to upload.
 44. Choose between automatic/manual deploy option. 
@@ -278,8 +279,8 @@ Final deployment:
 
 * #### [How to Fork](#how-to-fork)
 1. Navigate to [project repository](https://github.com/sinastiller/pp4_restaurant_website).
-2. Click on "For" in the top right corner.
-3. Under "Owner," select the dropdown menu and click an owner for the forked repository.
+2. Click on "Fork" in the top right corner.
+3. Under "Owner," select the dropdown menu and click on owner for the forked repository.
 4. To change the name of repo, enter a new name.
 5. Enter description(optional).
 6. Choose which branches to include.
@@ -300,13 +301,13 @@ Please find the carried out testing on [TESTING.md](TESTING.md).
 ## [**Credits**](#credits)
 
 ### [Code Used](#code-used)
-- [Django Cocumentation](https://docs.djangoproject.com/en/4.2/)
-- [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- [Django Documentation](https://docs.djangoproject.com/en/4.2/)
+- [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - [W3Schools](https://www.w3schools.com/)
 - [Stackoverflow](https://stackoverflow.com/)
 - [Hello Django Walkthorugh Project](https://github.com/ckz8780/ci-fsf-hello-django/tree/c13b414fd2e87a54b4f2788ceffec55be4ade925)
 - [I think therefore I blog Walkthorugh Project](https://github.com/Code-Institute-Solutions/Django3blog)
-- [Django ALLauth](https://django-allauth.readthedocs.io/en/latest/) - used as reference when creating account authorisation.
+- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - used as reference when creating account authorisation.
 - [Kayla's Bed and Breakfast](https://github.com/Kaylaesmith1/bed-and-breakfast) - used for general reference, ideas and logic throughout the project.
 - [Youtube](https://www.youtube.com/playlist?list=PLBTOBXTz1YFZK0moSgoZq93V_AdvrUGSj) - used as a reference when creating the menu.
 - [Django Tutorial](https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78) - used as reference for creating set times on the booking form.
@@ -315,7 +316,7 @@ Please find the carried out testing on [TESTING.md](TESTING.md).
 
 
 ### [Content](#content)
-The Menu content was created from [KYND Cafe](https://www.kyndcommunity.com/pages/kyndcafe),[Cafe Organic](https://cafeorganic.co/), and my own creations.
+The Menu content was created from [KYND Cafe](https://www.kyndcommunity.com/pages/kyndcafe), [Cafe Organic](https://cafeorganic.co/), and my own creations.
 
 ### [Media](#media)
 The images were downloaded from [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/).

@@ -308,8 +308,7 @@ Django message | Display | User message will be displayed when logout was succes
 ### [Resolved Bugs](#resolvedbugs)
 
 - Footer was visible while scrolling up and down the webpage. Taking off the class "footer-bottom" and passing it a margin and padding of 0 made the footer stick to the bottom of the webpage.
-- iframe + container 
-
+- When checking responsiveness iframe and get-in-touch container would overlap. To fix this issue I decreased the size of the iframe.
 
 ### [Unresolved Bugs](#unresolvedbugs)
 - Navlinks should be active to show user which site they are currently on. I did not find out how to display this using bootstrap. 
